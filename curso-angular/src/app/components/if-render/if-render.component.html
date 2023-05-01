@@ -1,0 +1,9 @@
+<div class="class">
+    <h3 *ngIf="canShow">Exibindo valor com Condicional</h3>
+    <h3 *ngIf="name === 'Noah'; else nameNotFound">Testando condição IF Else</h3>
+    <ng-template #nameNotFound>
+        <div>
+            <h3>Nome digitado incorretamente!</h3>
+        </div>
+    </ng-template>
+</div>
